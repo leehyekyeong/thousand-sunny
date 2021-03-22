@@ -173,7 +173,7 @@ p {
 /* header */
 
 .header {
-    padding: 60px 0;
+    padding: 100px 0 60px;
 }
 
 .header .row {
@@ -393,16 +393,17 @@ p {
 }
 
 .review-writer {
-    color: var(--head);
     font-family: 'Inter';
     font-weight: 400;
     font-size: 18px;
+    color: var(--sub1);
 }
 
 .review-writer strong {
     font-weight: 700;
     font-size: 22px;
     line-height: 2.18;
+    color: var(--sub2);
     display: block;
     margin-bottom: 4px;
 }
