@@ -5,27 +5,40 @@ font-family: 'Mulish', sans-serif;
 font-family: 'Playfair Display', serif;
 */
 
+/* color */
+:root {
+    --white: #ffffff;
+    --black: #303030;
+    --head: #4b4b4b;
+    --body: #686868;
+    --main: #FB8F1D;
+    --sub1: #8c9e89;
+    --sub2: #546b57;
+}
+
+
 
 /* GUI */
 
-h1 {
-    color: #202336;
+h1, h2 {
+    color: var(--black);
     font-family: 'Playfair Display';
+}
+
+h1 {
     font-weight: bold;
     font-size: 64px;
     line-height: 1.25;
 }
 
 h2 {
-    color: #000000;
-    font-family: 'Playfair Display';
     font-weight: bold;
     font-size: 36px;
     line-height: 1.38;
 }
 
 p {
-    color: #7D7987;
+    color: var(--body);
     font-family: 'Mulish';
     font-weight: 300;
     font-size: 17px;
@@ -35,12 +48,12 @@ p {
 .button {
     width: 180px;
     height: 52px;
-    background-color: #FB8F1D;
+    background-color: var(--main);
     border-radius: 8px;
     font-family: 'Mulish';
     font-weight: bold;
     font-size: 17px;
-    color: #FFFFFF;
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -67,7 +80,7 @@ p {
 
 .photo-header a,
 .trend-header a {
-    color: #FB8F1D;
+    color: var(--main);
     font-family: 'Inter';
     font-weight: 600;
     font-size: 15px;
@@ -101,7 +114,7 @@ p {
 }
 
 .menu {
-    color: #B8BECD;
+    color: var(--sub1);
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
@@ -119,7 +132,7 @@ p {
 }
 
 .menu li:hover {
-    color: #202336;
+    color: var(--sub2);
 }
 
 .nav-button-group {
@@ -141,10 +154,10 @@ p {
 .nav-button {
     width: 132px;
     height: 44px;
-    background-color: #FFFFFF;
-    border: 1px solid #FB8F1D;
+    background-color: var(--white);
+    border: 1px solid var(--main);
     border-radius: 8px;
-    color: #FB8F1D;
+    color: var(--main);
 
     display: flex;
     justify-content: center;
@@ -152,8 +165,8 @@ p {
 }
 
 .inverted {
-    background-color: #FB8F1D;
-    color: #FFFFFF;
+    background-color: var(--main);
+    color: var(--white);
 }
 
 
@@ -176,7 +189,7 @@ p {
 }
 
 .finder-title {
-    color: #202336;
+    color: var(--head);
     font-family: 'Inter';
     font-weight: 600;
     font-size: 22px;
@@ -188,7 +201,7 @@ p {
 .finder-line {
     width: 32px;
     height: 2px;
-    background: #202336;
+    background: var(--head);
     border-radius: 4px;
     margin-bottom: 48px;
 }
@@ -209,7 +222,7 @@ p {
     padding: 12px 20px;
     margin-right: 32px;
     margin-bottom: 36px;
-    border: 1px solid #AFB0B9;
+    border: 1px solid var(--body);
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -219,7 +232,7 @@ p {
 }
 
 .dropdown-button:hover, .dropdown-button:focus {
-    border: 2px solid #FB8F1D;
+    border: 2px solid var(--main);
     cursor: pointer;
 }
 
@@ -227,21 +240,21 @@ p {
     display: none;
     position: absolute;
     top: 52px;
-    background-color: #ffffff;
+    background-color: var(--white);
     width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: #202336;
+    color: var(--head);
     padding: 12px 20px;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #FB8F1D;
-    color: #FFFFFF;
+    background-color: var(--main);
+    color: var(--white);
 }
 
 .show {
@@ -249,11 +262,11 @@ p {
 }
 
 .dropdown-value {
-    color: #4A4C53;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 15px;
     line-height: 1.5;
+    color: var(--head);
 }
 
 
@@ -292,7 +305,7 @@ p {
 
 .service-desc {
     display: inline-block;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 
@@ -311,6 +324,9 @@ p {
     width: 260px;
     height: 332px;
     margin-right: 24px;
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .photo-card img {
@@ -324,29 +340,22 @@ p {
 }
 
 .photo-card-loc {
-    width: 120px;
     height: 56px;
-    padding-top: 12px;
-    border-radius: 0px 6px 0px 0px;
-    background-color: #FFFFFF;
-    color: #80918E;
-
+    padding: 12px 20px 0 0;
+    border-radius: 0px 16px 0px 0px;
+    background-color: var(--white);
+    color: var(--sub1);
+    font-weight: 500;
     position: absolute;
     bottom: 0;
     left: 0;
-
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.6;
 }
 
 .photo-card-loc strong {
-    color: #042521;
+    display: block;
+    color: var(--sub2);
     font-family: 'Inter';
     font-weight: 600;
-    font-size: 15px;
-    line-height: 1.6;
 }
 
 
@@ -375,7 +384,7 @@ p {
 }
 
 .review-content {
-    color: #000000;
+    color: var(--head);
     font-family: 'Mulish';
     font-weight: 400;
     font-size: 24px;
@@ -383,20 +392,19 @@ p {
     margin-bottom: 40px;
 }
 
-.review-writer strong {
-    color: #000000;
+.review-writer {
+    color: var(--head);
     font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.review-writer strong {
     font-weight: 700;
     font-size: 22px;
     line-height: 2.18;
     display: block;
     margin-bottom: 4px;
-}
-
-.review-writer {
-    color: rgba(0, 0, 0, 0.85);
-    font-weight: 400;
-    font-size: 18px;
 }
 
 .review .col-6:last-child {
@@ -419,7 +427,7 @@ p {
     width: 132px;
     height: 60px;
     border-radius: 16px 0px 0px 0px;
-    background-color: #fff;
+    background-color: var(--white);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -491,7 +499,7 @@ p {
     font-weight: 700;
     font-size: 19px;
     line-height: 1.58;
-    color: #000000;
+    color: var(--sub2);
     display: block;
     margin-bottom: 8px;
 }
@@ -501,13 +509,13 @@ p {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.73;
-    color: #7D7987;
+    color: var(--sub1);
     display: block;
     margin-bottom: 24px;
 }
 
 .trend-card a{
-    color: #FB8F1D;
+    color: var(--main);
     font-family: 'Inter';
     font-weight: 600;
     font-size: 15px;
@@ -523,14 +531,14 @@ p {
 
 .footer {
     background-color: #F9F9FB;
-    color: #848484;
+    color: var(--sub1);
     font-family: 'Mulish';
     font-weight: 300;
 }
 
 .footer .row:first-child {
     padding: 80px 0;
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid var(--body);
 }
 
 .footer .logo {
@@ -544,7 +552,8 @@ p {
 }
 
 .copyright {
-    font-size: 17px;
+    color: var(--sub2);
+    font-size: 16px;
     line-height: 1.65;
 }
 
@@ -556,7 +565,7 @@ p {
 .footer-list-head {
     height: 44px;
     margin-bottom: 28px;
-    color: #000;
+    color: var(--sub2);
     font-weight: bold;
     font-size: 19px;
     line-height: 1.8;
