@@ -23,16 +23,15 @@ font-family: 'Playfair Display', serif;
 h1, h2 {
     color: var(--black);
     font-family: 'Playfair Display';
+    font-weight: bold;
 }
 
 h1 {
-    font-weight: bold;
     font-size: 64px;
     line-height: 1.25;
 }
 
 h2 {
-    font-weight: bold;
     font-size: 36px;
     line-height: 1.38;
 }
@@ -515,7 +514,7 @@ p {
     margin-bottom: 24px;
 }
 
-.trend-card a{
+.trend-card a {
     color: var(--main);
     font-family: 'Inter';
     font-weight: 600;
